@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 from textwrap import wrap
-from colors import bcolors
 import os
+from colors import bcolors
 
 FONT_USER_INFO = ImageFont.truetype("arial.ttf", 90, encoding="utf-8")
 FONT_TEXT = ImageFont.truetype("arial.ttf", 110, encoding="utf-8")

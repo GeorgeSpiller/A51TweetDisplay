@@ -1,8 +1,8 @@
-from colors import bcolors
 from ImageManager import createTweetImage
 from PIL import Image
 import os
 import time
+from colors import bcolors
 
 TWEET_SCREENSHOT_DIR = os.path.abspath(os.getcwd() + "\\TweetsOut")
 GIF_RAW_DIR = os.path.abspath(os.getcwd() + "\\bin")

@@ -2,6 +2,8 @@ import assemble_tweets as astwt
 import TwitterScraper as twtScrp
 import ImageManager as imgMagr
 from colors import bcolors
+import colorama
+colorama.init()
 
 def verifyInput(userInput, min, default, max):
     if userInput == "":

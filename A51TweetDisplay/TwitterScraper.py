@@ -18,15 +18,12 @@ def authenticate():
     # re-uthenticate user
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret, callback_uri)
     redirect_url = auth.get_authorization_url()
-    message = f"""{bcolors.OKCYAN}Twitter Authentication{bcolors.ENDC}
-    Please press enter, and Python will open the following url:
+    print(f"{bcolors.OKCYAN}Twitter Authentication{bcolors.ENDC}")
+    print("Please press enter, and Python will open the following url:")
+    print(f"{bcolors.OKCYAN}\t{redirect_url}{bcolors.ENDC}")
+    print("So you can link an account to use with the API. If the link \ndoesn't open, just copy and paste the url into your browser.")
+    _ = input("\nPress Enter to continue. ")
 
-    {bcolors.OKCYAN}{redirect_url}{bcolors.ENDC}
-
-    So you can link an account to use with the API. If the link 
-    doesn't open, just copy and paste the url into your browser.
-    """
-    _ = input(message)
     webbrowser.open(redirect_url)
     user_pin_input = input("Please enter the pin: ")
     
