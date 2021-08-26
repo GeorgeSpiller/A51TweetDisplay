@@ -13,6 +13,8 @@ in the navigation bar at the top, click it ; type cmd and press enter
 
 type:
 pip install -r requirement.txt
+(If this command does not work, try)
+pip install -r requirments.txt --user
 
 To run the program do the following:
 
