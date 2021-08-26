@@ -19,9 +19,7 @@ draw_interf = ImageDraw.Draw(img)
 x=0
 y=0
 FONT_SIZE = 40
-font = ImageFont.load_default()
 FONT_TEXT =  ImageFont.truetype("D:\\Users\\geosp\Documents\\Code\\PY\\Projects\\TwitterScreenshot\\resources\\PALADINS.TTF",FONT_SIZE, encoding="utf-8") 
-#ImageFont.truetype("arial.ttf", FONT_SIZE, encoding="utf-8")
 COLOR_TEXT_LIGHT = (220, 220, 220)  # 192
 COLOR_TEXT_DARK = (192, 192, 192)
 LINE_MARGIN = 15

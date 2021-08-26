@@ -9,7 +9,12 @@ def verifyInput(userInput, min, default, max):
     if userInput == "":
         return default
     try:
-        int(userInput)
+        userInput = int(userInput)
+        if min:
+            min = int(min)    
+        default = int(default)
+        if max:
+            max = int(max)
     except ValueError:
         print(f"{bcolors.FAIL}Input must be a number{bcolors.ENDC}")
         exit()
